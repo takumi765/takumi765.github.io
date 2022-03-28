@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Takumi765</title>
+    <link rel="stylesheet" media="all" href="../../css/style.css" />
+  </head>
+  <body>
+    <header>
+      <ul>
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../html/projects.html">Projects</a></li>
+      <li><a href="../../html/publications.html">Publications</a></li>
+      <li><a href="../../html/others.html">Others</a></li>
+    </ul>
+    </header>
+    <main>
+      <div class="body">
+        <h1 class="center">VRのHMD（ヘッドマウントディスプレイ）はなんですぐにピンボケするの？</h1>
+        <h2>参考</h2>
+        <ul>
+          <li class="initialized"><a href="https://www.slideshare.net/AmadeusSVX/hololens-85758620" target="参考">HoloLens光学系の謎に迫る</a></li>
+        </ul>
+        <h2>はじめに</h2>
+        <p>
+          近年VR技術が急速に普及しています。そんなVR技術によって作り出される仮想空間(Virtual Reality)を体験するためには、皆さんご存知のヘッドマウントディスプレイ（HMD、通称：VRゴーグル）が必要になります。<br>
+          読者の中には使用した経験がある人も多いのではないでしょうか？<br>
+          VRゴーグルは小さいながらも付けると、視野全体に映像が映し出されあたかも仮想空間の中に自分がいるかように感じることが出来ます。<br>
+          しかし、このような素晴らしい機器にも<span style="color: red;">弱点</span>はあります。それは、VRゴーグルが少しずれてしまうだけで見ている映像がぼやけてしまうことです。<br>
+          今回の記事では、
+          <ul>
+            <li class="initialized"><b>なぜ小さいVRゴーグルでも視野全体に広がる大きな映像を見ることが出来るのか？</b></li>
+            <li class="initialized"><b>なぜVRゴーグルが少しずれただけで映像がぼやけてしまうのか？</b></li>
+          </ul>
+          について解説します。
+        </p>
+        <h2>なぜ小さいVRゴーグルでも視野全体に広がる大きな映像を見ることが出来るのか？</h2>
+        <p>
+          目の前に大画面を提示するためには，どのようにするのが一番良いでしょうか？<br>
+          皆さんが思い浮かぶ方法が目の前に物理的に巨大なディスプレイを用意する事でしょう。しかし、それは非現実的です。なぜなら、VRゴーグルを装着している時その重さを全て頭と首で支える必要があるからです。巨大なディスプレイを付けてしまってはディスプレイの重量に体が耐えられません。
+          <br>では、どのようにすればよいでしょうか？<br>
+          こんな方法はどうでしょうか？<b>「小さなディスプレイを用意し、虫眼鏡で拡大させて見る」</b>この方法だと頭や首への負担が少なくて済みますね。VRゴーグルはこの仕組みを用いています。<br>
+          では、実際にVRゴーグル大まかな構造を見てみましょう。下にVRゴーグルの大まかな構造を示します。
+          <div class="center"><img src="../../img/staff.jpg" width="500px" alt="VRゴーグルの構造"/></div><br>
+          この図から、私たちはVRゴーグルに搭載されている広角レンズ（=短焦点レンズ）を通して、目の位置と反対側に取り付けられている小さなディスプレイを拡大して見ています。（虫眼鏡で拡大して見るのと同じ要領）<br>
+          このような仕組みにより、小さいVRゴーグルでも視野全体を覆う映像を提供することが出来るんですね！<br>
+          しかし、この仕組みこそが先ほど挙げた弱点の原因となっています。
+        </p>
+        <h2>なぜVRゴーグルが少しずれただけで映像がぼやけてしまうのか？</h2>
+        <p>
+          目の前に大画面を置く方法と拡大鏡を用いて拡大して見る方法の間にはどのような違いがあるのでしょうか？<br>
+          それは、レンズによってディスプレイから出る光をレンズで無理やり曲げていることです。ディスプレイの各部分から出た光の経路を示します。
+          <div class="center"><img src="../../img/staff.jpg" width="500px" alt="光路"/></div><br>
+          物体の各部分から出た光は，レンズを通って様々な角度に曲がります．しかし，全ての光は，点線の間に収まります．図の実線は点線の間に無数にある屈折した光の中で，眼に入ってくるものを示しています．つまり，この点線の中に眼があれば，そこの点からくる光が入ってくるので，物体のその部分が見えるということがわかります．
+          <br>では，物体全てが見える範囲はどのようになるでしょうか？
+          <br>上の三つの図を重ねてみましょう．
+          <div class="center"><img src="../../img/staff.jpg" width="500px" alt="光路重ね合わせ"/></div><br>
+          この図から，この赤い三角形の中に眼(瞳孔)がある限りは，物体全てが見えるということがわかります．また，図中の角αが視野角と呼ばれ，同じレンズの大きさなら，三角形は小さくなります．つまり，視野角が大きいほど，物体全てを見ることができる範囲が狭まります。
+          <div class="center"><img src="../../img/staff.jpg" width="500px" alt="レンズの視野角"/></div><br>
+          この三角形はレンズと物体が離れるにつれてどのように変化するのでしょうか？<br>
+          最後の図で考えます．物体とレンズを話すと，虚像ができる位置がどんどん後ろに下がっていきます．よって，赤色の三角形はどんどん鋭角になって行くことがわかります．
+          <br>※わからない人は，実際に書いてみるといいかもしれません．
+          <div class="center"><img src="../../img/staff.jpg" width="500px" alt="三角形の形"/></div><br>
+          <h2>結論</h2>
+          <p>
+            これらのことから、以下のことが言えます。
+            <table>
+              <tr>
+                <th style="width:11rem; text-align: left;">レンズが小さいとき</th>
+                <td>視野角が小さいとたとえ視野角が小さくても三角形は小さくなり，眼の動ける範囲が小さくなります．</td>
+              </tr>
+              <tr>
+                <th style="text-align: left;">短焦点レンズを使用したとき<br>(=視野角が広いレンズを使用したとき)</th>
+                <td>長焦点レンズよりも眼が動ける範囲が狭まります．</td>
+              </tr>
+              <tr>
+                <th style="text-align: left;">レンズと像を話したとき</th>
+                <td>三角形はおおきくなり，より視野角が小さくなります．</td>
+              </tr>
+            </table>
+          </p>
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <div class="body column">
+        <div class="flex">
+          <h4>研究室</h4>
+          <div class="sens"><a href="https://www.sens.sys.es.osaka-u.ac.jp/" target="_SENSlab"><img src="../../img/SENSlab.png" alt="SENSlab" width="55%"></a></div>
+            <p>大阪大学佐藤研究室のホームページです。</p>
+        </div>
+        <div class="flex">
+          <h4>GitHub</h4>
+          <a href="https://github.com/takumi765" target="_github"><img src="../../img/GitHub.png" alt="github" width="100px"></a>
+            <p>JavaScriptを用いたライブラリやVBAなどを用いたエクセルアプリケーションを公開しています。</p>
+        </div>
+        <div class="flex">
+          <h4>準備中</h4>
+            <p>もうしばらくお待ちください...</p>
+        </div>
+    </footer>
+  </div>
+
+    <div class="copyright">
+      <a href="https://popo-design.net" target="_blank">Copyright © popodesign.</a> 
+    </div>
+    <p id="pagetop"><a href="#">TOP</a></p>
+  </body>
+</html>
