@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>Takumi765</title>
+        <link rel="stylesheet" media="all" href="../../../css/ress.min.css" />
+        <link rel="stylesheet" media="all" href="../../../css/style.css" />
+        <script src="../../../js/jquery-2.1.4.min.js"></script>
+        <script src="../../../js/style.js"></script>
+      
+        <!-- Favicon -->
+        <link rel="icon" type="image/png" href="../../../img/favicon.png">
+      </head>
+  <body>
+    <header>
+        <div class="menu">
+          <div class="container">
+            <div class="row">
+              <div class="col span-12">
+                <nav>
+                  <div id="open"></div>
+                  <div id="close"></div>
+                  <div id="navi">
+                    <ul>
+                      <li><a href="../../../index.html">Home</a></li>
+                      <li><a href="../../projects.html">Projects</a></li>
+                      <li><a href="../../publications.html">Publications</a></li>
+                      <li><a href="../../others.html">Others</a></li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+          </div>
+      </header>
+
+    <main>
+      <section class="container">
+        <h1 class="center"><span class="underline">WebSocket-Server</span></h1>
+          <h2>はじめに</h2>
+            おそらく読者の中には、「WebSocket Serverとはなんやねん？」となっている方もいらっしゃると思います。
+            本リポジトリを誰もが使いやすくするため、WebSocket Serverに関しての記事を後日書こうと思います。<br><br>
+          <h2>リポジトリの説明</h2>
+            ではリポジトリの説明をします！<br>
+            ほとんどの読者がこのように思っていると思います。「このリポジトリで何が出来んねん！」ズバリ言いますと、このリポジトリを用いることで、超絶簡易的なWebSocket通信をすることが出来ます。
+            ブラウザ上にあるボタンをクリックすると、WebSocket通信を行ってブラウザとローカルのプログラムとメッセージを送り合ったり、やり取りをすることが出来ます。
+            <div><img src="../../../img/Websocket/browser.png"></div>
+            では、より具体的に見ていきます。<br><br>
+            <ol>
+              <li>index.jsをコンパイルします。そうするとWebSocket通信の仮想サーバが立ち上がります。<code>node index.js</code></li>
+              <li>次にindex.htmlをダブルクリックで立ち上げてみてください。これでクライアント側を立ち上げたことになります。（※簡易的すぎて呆れてしまうかもしれません）</li>
+              <li>
+                ではブラウザ上で、「右クリック」→「検証」→「Console」としてみてください
+                <div><img src="../../../img/Websocket/process1.png" width="300px"><img src="../../../img/Websocket/process2.png" width="600px"></div>
+                <div><img src="../../../img/Websocket/process3.png" width="600px"></div>
+              </li>
+              <li>Console画面まで行くと、何か書いてあると思います。「WebSocket Serverの接続に成功しました」</li>
+              <li>このメッセージの通り、サーバ側（<code>node index.js</code>としたJSファイル）とクライアント側（ブラウザで立ち上げているhtmlファイル）の両方の準備ができたので、WebSocket通信が行える状態になったんですね！</li>
+              <li>この画面を見ながら画面左上にあるボタンをクリックしてみてください。そうするとブラウザ上のコンソール画面と<code>node index.js</code>を打ち込んだコマンドプロンプトの両方に文字が出ていることが確認できます。</li>
+            </ol>
+            以上でこのリポジトリができることは全てです。簡単でしたね。<br>
+            「これで何ができるねん！」って思っているそこのあなた！このプログラムではボタンのみでしたが、この部分が入力フォームだったらどうでしょうか？<br>
+            
+            入力された文字がボタンを押された瞬間にWebSocket通信によりサーバに送られ、別のWebSocket通信を行っているブラウザにメッセージを送ることが出来ます。このようにすればチャットアプリが出来ちゃいますね！<br><br>
+
+          <h2>おわりに</h2>
+            それでは本日はこれで終わりにします！<br>
+            
+            記事を読んでいただきありがとうございました！<br>
+            
+            自分なりに腑に落ちたのでまとめてみましたが、JavaScript初心者なので、もし間違いなどあれば教えていただけるとありがたいです。<br>
+
+            それでは次回の記事をお待ちください！
+          
+          </section>
+          <br><br><br><br>
+          <section class="container">
+            <h1 class="center"><span class="underline">今日の写真</span></h1>
+              <div class="center"><img src="../../../img/WebSocket/sakura.jpg" width="300px"></div>
+              今年の桜はいつもよりも直ぐ散ってしまったように感じます。悲しい。<br>
+              私の家の周りにはたくさんの桜の木が植えられていて、春になるとそれらがいっせいに咲き始めます。
+              その光景は、花に興味がない私でも思わず写真を取ってしまうほどきれいでした。今回の写真はその時に撮った写真です。<br>
+              最近春とは思えないほど暑いですね。体調管理に気を付けてお過ごしください。<br>
+              （春と言えばもう一つ。春の夜の澄んだ空気がとても好きで、帰りが遅くなった時は人がいないところでマスクを外して思いっきり空気を吸い込む事をしています。誰か共感してくれる方はいませんか？笑）
+          </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col span-4">
+            <h5>研究室</h5>
+            <div class="sens"><a href="https://www.sens.sys.es.osaka-u.ac.jp/" target="_SENSlab"><img src="../../../img/SENSlab.png" alt="SENSlab" width="55%"></a></div>
+            <p>大阪大学佐藤研究室のホームページです。</p>
+          </div>
+          <div class="col span-4">
+            <h5>GitHub</h5>
+            <a href="https://github.com/takumi765" target="_github"><img src="../../../img/GitHub.png" alt="github" width="100px"></a>
+              <p>JavaScriptを用いたライブラリやVBAなどを用いたエクセルアプリケーションを公開しています。</p>
+          </div>
+          <div class="col span-4">
+            <h5>準備中</h5>
+            <p>もうしばらくお待ちください...</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  
+    <div class="copyright">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            Copyright © <a href="https://popo-design.net" target="_blank">popodesign. </a>
+          </div>    
+        </div>
+      </div>
+    </div>
+  
+    <p id="pagetop"><a href="#">TOP</a></p>    
+  
+  </body>
+</html>
