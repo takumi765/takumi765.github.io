@@ -61,7 +61,7 @@ nav a:hover{
 
 /* ヒーロー画面スマホ */
 .hero{
-    background-image: url(../img/main.jpg);
+    background-image: url(../img/hero.jpg);
     height: 500px;
     background-position: center;
     background-size: cover;
