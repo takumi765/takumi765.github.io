@@ -50,7 +50,7 @@ body{
 }
 
 .nav a{
-    font-size: 20px;
+    font-size: 15px;
     text-decoration: none;/* nav：下線を消す */
     color: black;
 }
@@ -70,7 +70,7 @@ nav a:hover{
 
 .first-sentence{
     color: white;
-    font-size: 50px;
+    font-size: 40px;
     padding-top: 100px;
 }
 
@@ -346,6 +346,10 @@ label{
 
 .site{
     padding-bottom: 30px;
+}
+
+.nav a{
+    font-size: 20px;
 }
 }
 
