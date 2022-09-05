@@ -160,17 +160,17 @@ footer{
 }
 
 /* Profile、スマホ画面 */
-.about{
+.profile{
     background-color: white;
 }
 
-.about-main{
+.profile-main{
     background-color: white;
     width: 85%;
     margin: auto;/* 真ん中配置 */
 }
 
-.about-main h2{
+.profile-main h2{
     padding-top: 30px;
     padding-bottom: 10px;
     font-size: 30px;
@@ -187,7 +187,7 @@ footer{
     padding-bottom: 0px;/* 下に余白を開ける */
 }
 
-.about-main h3{
+.profile-main h3{
     padding-top: 10px;
     padding-bottom: 5px;
     font-size: 20px;
@@ -198,22 +198,20 @@ footer{
 }
 
 /* GitHub、スマホ画面 */
-.contact{
-    padding-top: 50px;
+.github{
     background-color: white;
 }
 
-.contact-inner{
+.github-inner{
     background-color: white;
     margin: auto;/* 中心配置 */
     width: 90%;
 }
 
-.contact h2{
-    color: #20b2aa;
-    font-size: 40px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.github h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    font-size: 30px;
 }
 
 .repository{
@@ -238,7 +236,7 @@ label{
     display: block;
 }
 
-.contact-form{
+.github-form{
     text-align: center;
     font-size: 30px;
 }
@@ -434,17 +432,17 @@ label{
 
 /* Profile、パソコン画面 */
 @media screen and (min-width: 700px){
-.about-main{
+.profile-main{
     width: 90%;
     text-align: left;
 }
 
-.about-main h2{
+.profile-main h2{
     font-size: 40px;
     padding-left: 2.5%;
 }
 
-.about-main h3{
+.profile-main h3{
     font-size: 25px;
     padding-left: 2.5%;
 }
@@ -476,11 +474,11 @@ label{
 
 /* GitHub、パソコン画面 */
 @media screen and (min-width: 700px) {
-.contact h2{
+.github h2{
     font-size: 40px;
 }
 
-.contact li{
+.github li{
     font-size: 20px;
 }
 }
