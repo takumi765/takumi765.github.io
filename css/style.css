@@ -86,8 +86,8 @@ nav a:hover{
 .news-sentence{
     text-align: center;
     font-size: 30px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-bottom: 0px;
     color: #20b2aa;
 }
 

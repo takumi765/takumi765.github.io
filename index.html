@@ -2,13 +2,20 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Home</title>
     <link rel="stylesheet" href="./css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- use jquery -->
+    <script src="http://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/list.js"></script>
+
 </head>
 
 <body>
     <header class="header">
+
         <div class="site">
             <h1><a href="./index.html">Takumi Iwasaki</a></h1>
         </div>
@@ -23,25 +30,31 @@
             </ul>
         </nav>
     </header>
+
+    
     
     <div id="container">
         <div class="hero">
             <p class="first-sentence">未知の世界へ</p>
         </div>
-    
-        <div class="news">
-            <p class="news-sentence">NEWs</p>
-            <div class="news-box">
-                <p class="news-item">2022-09-23<br>ブログ<a href="https://note.com/good_echium475/n/n164148d24e58" target="_blank">「何事も続かない人なんていない」</a>を投稿しました。</p>
-                <p class="news-item">2022-09-19<br>ブログ<a href="https://note.com/good_echium475/n/n5eac7cc0ea75" target="_blank">「病みに病んだ私の大学受験#1」</a>を投稿しました。</p>
-                <p class="news-item">2022-09-08<br>ブログ<a href="https://note.com/good_echium475/n/n7e5b367a1d0e" target="_blank">「大学院生が就活前半で感じたこと」</a>を投稿しました。</p>
-                <p class="news-item">2022-09-05<br>ブログ<a href="https://note.com/good_echium475/n/ne02688412b3e" target="_blank">「初めまして。」</a>を投稿しました。</p>
-                <p class="news-item">2022-05-23<br><a href="https://sci22.iscie.or.jp/" target="_blank">第66回システム制御情報学会研究発表講演会</a>にて学生発表賞を受賞しました。</p>
-                <p class="news-item">2022-04-01<br><a href="https://www.es.osaka-u.ac.jp/ja/index.html" target="_blank">大阪大学大学院基礎工学研究科</a>博士前期課程に進学しました。</p>
-            </div>
+
+        <p class="news-sentence">NEWs</p>
+        <div class="js-accordion news">
+            <ul class="news-box" style="list-style: none;">
+              <li class="news-item">2022-09-23<br>ブログ<a href="https://note.com/good_echium475/n/n164148d24e58" target="_blank">「何事も続かない人なんていない」</a>を投稿しました。</li>
+              <li class="news-item">2022-09-19<br>ブログ<a href="https://note.com/good_echium475/n/n5eac7cc0ea75" target="_blank">「病みに病んだ私の大学受験#1」</a>を投稿しました。</li>
+              <li class="news-item">2022-09-08<br>ブログ<a href="https://note.com/good_echium475/n/n7e5b367a1d0e" target="_blank">「大学院生が就活前半で感じたこと」</a>を投稿しました。</li>
+              <li class="news-item">2022-09-05<br>ブログ<a href="https://note.com/good_echium475/n/ne02688412b3e" target="_blank">「初めまして。」</a>を投稿しました。</li>
+              <li class="news-item">2022-05-23<br><a href="https://sci22.iscie.or.jp/" target="_blank">第66回システム制御情報学会研究発表講演会</a>にて学生発表賞を受賞しました。</li>
+              <li class="news-item">2022-04-01<br><a href="https://www.es.osaka-u.ac.jp/ja/index.html" target="_blank">大阪大学大学院基礎工学研究科</a>博士前期課程に進学しました。</li>
+            </ul>
+            <div class="btn js-btn-more" style="color: #20b2aa;">もっと見る</div>
+            <div class="btn js-btn-close" style="color: #20b2aa;">閉じる</div>
+          </div>
         </div>
     </div>
     
+
     <footer>
         <div class="sns-nav">
             <ul>
@@ -52,6 +65,5 @@
             </ul>
         </div>
     </footer>
-
 </body>
 </html>
