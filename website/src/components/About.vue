@@ -10,7 +10,7 @@
           <img class="profImg" src="../assets/profile.jpg">
         </v-sheet>
         <v-sheet class="ma-2 pa-2">
-          <v-table density="compact">
+          <v-table width=95% density="conpact">
             <thead>
               <tr>
                 <th class="text-left">
