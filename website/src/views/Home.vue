@@ -1,9 +1,12 @@
 <template>
-  <HelloWorld />
-  <HelloWorld1 />
+  <div>
+    <p>
+      <router-link to="/">Go to Profile</router-link>
+    </p>
+    <HelloWorld />
+  </div>
 </template>
 
 <script setup>
   import HelloWorld from '@/components/HelloWorld.vue'
-  import HelloWorld1 from '@/components/HelloWorld1.vue'
 </script>
