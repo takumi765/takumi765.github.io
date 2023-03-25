@@ -1,5 +1,31 @@
 <template>
   <div>
+    <div class="text-center">
+    <v-container>
+      <v-row justify="center">
+        <v-col cols="8">
+          <v-container class="max-width">
+            <v-pagination
+              v-model="page"
+              class="my-4"
+              :length="10"
+              @input="getNumber"
+            ></v-pagination>
+          </v-container>
+        </v-col>
+      </v-row>
+      <v-window v-model="page">
+        <v-window-item value="page">
+          123
+        </v-window-item>
+
+        <v-window-item value="page">
+          Apps
+        </v-window-item>
+      </v-window>
+    </v-container>
+    
+  </div>
     <div class="d-flex flex-wrap flex-row mb-6">
       <iframe class="note-embed noteCard noteCard noteCard" src="https://note.com/embed/notes/n3394e5a002c0"></iframe>
       <iframe class="note-embed noteCard" src="https://note.com/embed/notes/n4f2f57b0ed6b"></iframe>
@@ -69,8 +95,21 @@
   </div>
 </template>
 
-<script setup>
+<script>
   // import "https://note.com/scripts/embed.js";
+  export default {
+    name: 'App',
+    data () {
+      return {
+        page: 1
+      }
+    },
+    methods: {
+      getNumber: function(number){
+        console.log(number);
+      }
+    }
+  }
 </script>
 
 <style scoped>

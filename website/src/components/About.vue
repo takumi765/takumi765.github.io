@@ -5,15 +5,15 @@
     大学ではVR関連の研究をしています。<br>
     
     <div>
-      <div class="d-flex flex-wrap flex-row mb-6">
-        <v-sheet class="ma-2 pa-2">
+      <div class="d-flex flex-wrap mb-6">
+        <v-sheet class="ma-1 pa-1">
           <img class="profImg" src="../assets/profile.jpg">
         </v-sheet>
-        <v-sheet class="ma-2 pa-2">
-          <v-table width=95% density="conpact">
+        <v-sheet class="ma-1 pa-1">
+          <v-table density="compact">
             <thead>
               <tr>
-                <th class="text-left">
+                <th width=120px class="text-left">
                   Category
                 </th>
                 <th class="text-left">
@@ -33,6 +33,7 @@
           </v-table>
         </v-sheet>
       </div>
+      
     </div>
   </div>
 </template>
@@ -48,7 +49,7 @@
           },
           {
             category: "所属",
-            content : "大阪大学 基礎工学研究科 システム創成専攻 システム科学領域",
+            content : "大阪大学 基礎工学研究科",
           },
           {
             category: "趣味",
@@ -57,10 +58,6 @@
           {
             category: "開発チーム",
             content : "Nebore（ネボア）",
-          },
-          {
-            category: "連絡先",
-            content : "takumi.iwasaki[at]sens.sys.es.osaka-u.ac.jp",
           },
         ],
       }
