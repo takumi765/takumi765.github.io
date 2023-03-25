@@ -6,15 +6,15 @@
         <v-icon icon="mdi-circle-slice-4" />
         Iwasaki Takumi
       </v-app-bar-title>
-      <v-app-bar-nav-icon></v-app-bar-nav-icon>
       <v-tabs
         v-model="tab"
         color="deep-purple-accent-4"
         align-tabs="center"
       >
-        <v-tab value="one1">Item One</v-tab>
-        <v-tab value="two1">Item Two</v-tab>
-        <v-tab value="three1">Item Three</v-tab>
+        <v-tab value="about">About</v-tab>
+        <v-tab value="skillset">Skill Set</v-tab>
+        <v-tab value="news">News</v-tab>
+        <v-tab value="works">Works</v-tab>
       </v-tabs>
     </v-app-bar>
   </div>

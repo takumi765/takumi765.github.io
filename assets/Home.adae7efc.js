@@ -1,1 +1,0 @@
-import{_ as t}from"./HelloWorld.95a44b54.js";import{x as a,q as r,s,ae as n,m as e,w as _,v as c}from"./index.f50e0087.js";import"./VBtn.99252039.js";const d={__name:"Home",setup(l){return(m,p)=>{const o=a("router-link");return r(),s("div",null,[n("p",null,[e(o,{to:"/"},{default:_(()=>[c("Go to Profile")]),_:1})]),e(t)])}}};export{d as default};
