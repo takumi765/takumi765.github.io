@@ -32,7 +32,7 @@
         news: [
           {
             date : "2023.03.24",
-            title: `<a href="https://takumi765.github.io/">Webサイト</a>をリニューアルしました`,
+            title: `<a href="https://takumi765.github.io/" target=_blank>Webサイト</a>をリニューアルしました`,
           },
         ]
       }
