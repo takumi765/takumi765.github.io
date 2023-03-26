@@ -18,7 +18,7 @@
           </v-window-item>
 
           <v-window-item value="apps">
-            Apps
+            <Apps />
           </v-window-item>
         </v-window>
       </v-card-text>
@@ -29,6 +29,7 @@
 
 <script setup>
   import Blogs from '@/components/sub-components/Blogs.vue'
+  import Apps from '@/components/sub-components/Apps.vue'
 </script>
 <script>
   export default {

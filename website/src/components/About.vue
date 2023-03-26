@@ -49,7 +49,7 @@
           },
           {
             category: "所属",
-            content : "大阪大学 基礎工学研究科",
+            content : "大阪大学大学院",
           },
           {
             category: "趣味",

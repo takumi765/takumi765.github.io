@@ -48,7 +48,23 @@
             peirod : "使用歴：2年",
           },
           {
+            language: "Python",
+            peirod : "使用歴：1年",
+          },
+          {
+            language: "Visual Basic",
+            peirod : "使用歴：1年",
+          },
+          {
             language: "C#",
+            peirod : "使用歴：0.5年",
+          },
+          {
+            language: "C++",
+            peirod : "使用歴：0.5年",
+          },
+          {
+            language: "R",
             peirod : "使用歴：0.5年",
           },
         ],

@@ -11,10 +11,10 @@
         color="deep-purple-accent-4"
         align-tabs="center"
       >
-        <v-tab value="about">About</v-tab>
-        <v-tab value="skillset">Skill Set</v-tab>
-        <v-tab value="news">News</v-tab>
-        <v-tab value="works">Works</v-tab>
+        <v-tab><router-link to="#about-link">About</router-link></v-tab>
+        <v-tab><router-link to="#skillset-link">Skill Set</router-link></v-tab>
+        <v-tab><router-link to="#news-link">News</router-link></v-tab>
+        <v-tab><router-link to="#works-link">Works</router-link></v-tab>
       </v-tabs>
     </v-app-bar>
   </div>

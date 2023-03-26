@@ -18,7 +18,7 @@
           :key="item.date"
         >
           <td>{{ item.date }}</td>
-          <td>{{ item.title }}</td>
+          <td v-html="item.title"></td>
         </tr>
       </tbody>
     </v-table>
@@ -32,7 +32,7 @@
         news: [
           {
             date : "2023.03.24",
-            title: "Webサイトをリニューアルしました",
+            title: `<a href="https://takumi765.github.io/">Webサイト</a>をリニューアルしました`,
           },
         ]
       }

@@ -1,18 +1,20 @@
 <template>
   <div>
+    <div id="about-link" class="about pa-5"><About /></div>
+    <div id="skillset-link" class="skillset pa-5"><SkillSet /></div>
+    <div id="news-link" class="news pa-5"><News /></div>
+    <div id="works-link" class="works pa-5"><Works /></div>
+    <div class="pa-5"><ScrollTop /></div>
     <router-link to="/home">Go to Home</router-link>
-    <div class="about pa-5"><About /></div>
-    <div class="skillset pa-5"><SkillSet /></div>
-    <div class="news pa-5"><News /></div>
-    <div class="works pa-5"><Works /></div>
   </div>
 </template>
 
 <script setup>
-  import About from '@/components/About.vue'
+  import About    from '@/components/About.vue'
   import SkillSet from '@/components/SkillSet.vue'
-  import News from '@/components/News.vue'
-  import Works from '@/components/Works.vue'
+  import News     from '@/components/News.vue'
+  import Works    from '@/components/Works.vue'
+  import ScrollTop from '@/layouts/default/ScrollTop.vue'
   /* css */
   import '../styles/base.css';
 </script>

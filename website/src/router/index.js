@@ -1,23 +1,24 @@
 // Composables
 import { createRouter, createWebHistory } from 'vue-router'
 
+import Default from '@/layouts/default/Default.vue'
+import Profile from '@/views/Profile.vue'
+import Home from '@/views/Home.vue'
+
 const routes = [
   {
     path: '/',
-    component: () => import('@/layouts/default/Default.vue'),
+    component: Default,
     children: [
       {
         path: '',
         name: 'Profile',
-        // route level code-splitting
-        // this generates a separate chunk (about.[hash].js) for this route
-        // which is lazy-loaded when the route is visited.
-        component: () => import(/* webpackChunkName: "home" */ '@/views/Profile.vue'),
+        component: Profile,
       },
       {
         path: 'home',
         name: 'Home',
-        component: () => import('@/views/Home.vue'),
+        component: Home,
       },
     ],
   },
@@ -26,6 +27,14 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
+  /* ページ内スクロール */
+  scrollBehavior(to) {
+    if (to.hash) {
+      return { el: to.hash, behavior: 'smooth'};
+    } else {
+      return { top: 0, behavior: 'smooth'};
+    }
+  }
 })
 
 export default router

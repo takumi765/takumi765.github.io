@@ -4,3 +4,10 @@
 h1{
   margin: 1% 0%;
 }
+
+/* 埋め込みURLの部分 */
+a{
+  color: rgb(4, 134, 4);
+  text-decoration: none;
+}
+
