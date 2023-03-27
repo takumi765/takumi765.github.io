@@ -345,7 +345,7 @@
     {
       date : 20220920,
       type : "hatena",
-      url  : "https://challenge-think.hatenablog.com/entry/2022/09/24/202455",
+      url  : "https://challenge-think.hatenablog.com/entry/2022/09/20/174303",
     },
     {
       date : 20220920,
