@@ -11,8 +11,7 @@
     <div v-if="props.blogInfo.type==='hatena'">
       <iframe
         class="hatenaCard"
-        v-bind:title="props.blogInfo.title"
-        v-bind:src="props.blogInfo.url"
+        v-bind:src="'https://hatenablog-parts.com/embed?url='+props.blogInfo.url"
         frameborder="0" 
         scrolling="no"
       ></iframe>
@@ -25,7 +24,6 @@
     blogInfo: {
       date : Number,
       type : String,
-      title: String,
       url  : String,
     }
   })
