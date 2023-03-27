@@ -1,33 +1,16 @@
 <template>
   <div>
-    <!-- <div class="text-center">
-    <v-container>
-      <v-row justify="center">
-        <v-col cols="8">
-          <v-container class="max-width">
-            <v-pagination
-              v-model="page"
-              class="my-4"
-              :length="15"
-            ></v-pagination>
-          </v-container>
-        </v-col>
-      </v-row>
-      <v-window v-model="page">
-        <v-window-item value="page">
-          123
-        </v-window-item>
-
-        <v-window-item value="page">
-          Apps
-        </v-window-item>
-      </v-window>
-    </v-container>
-    
-  </div> -->
+    <div class="text-center">
+      <v-pagination
+        v-model="page"
+        v-bind:length="totalPages"
+        :total-visible="parPage"
+        density=conpact
+      ></v-pagination>
+    </div>
     <div class="d-flex flex-wrap flex-row mb-6">
       <BlogIframe
-        v-for='blogInfo in blogInfoList'
+        v-for='blogInfo in pageList[page-1]'
         :key="blogInfo.url"
         :blogInfo="blogInfo"
       />
@@ -40,6 +23,7 @@
   import BlogIframe from '@/components/sub-components/BlogIframe.vue';
 
   const page = ref(1);
+  /* ブログの情報 */
   const blogInfoList = [
     {
       date : 20230327,
@@ -373,4 +357,28 @@
       url  : "https://note.com/embed/notes/ne02688412b3e",
     },
   ]
+
+  // 1ページあたりの記事数
+  const parPage = 8;
+
+  /* 総ページ数を数える */
+  var syou = (blogInfoList.length)/parPage;
+  var totalPages;
+  if(syou%1 === 0){
+    totalPages = Math.floor(syou);
+  }else{
+    totalPages = Math.floor(syou)+1;
+  }
+
+  /* ページ毎にブログを格納する */
+  var pageList = [];
+  var blogCount=0;
+  for(let i=0; i<totalPages; i++){
+      pageList[i]=[];
+    for(let j=0; j<parPage; j++){
+      if(blogCount<blogInfoList.length){
+        pageList[i][j] = blogInfoList[blogCount++];
+      }
+    }
+  }
 </script>

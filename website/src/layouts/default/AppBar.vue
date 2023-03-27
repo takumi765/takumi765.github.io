@@ -20,10 +20,7 @@
   </div>
 </template>
 
-<script>
-  export default {
-    data: () => ({
-      tab: null,
-    }),
-  }
+<script setup>
+  import { ref, computed } from 'vue'; 
+  const tab = ref(null);
 </script>
