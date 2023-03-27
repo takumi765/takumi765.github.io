@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 
 import Default from '@/layouts/default/Default.vue'
 import Profile from '@/views/Profile.vue'
-import Home from '@/views/Home.vue'
+import Home    from '@/views/Home.vue'
 
 const routes = [
   {
@@ -11,30 +11,39 @@ const routes = [
     component: Default,
     children: [
       {
-        path: '',
-        name: 'Profile',
+        path     : '',
+        name     : 'Profile',
         component: Profile,
       },
       {
-        path: 'home',
-        name: 'Home',
+        path     : 'home',
+        name     : 'Home',
         component: Home,
       },
     ],
   },
 ]
 
+  /* ページ内スクロール */
+const scrollBehavior = function(to) {
+  if (to.hash) {
+    return { 
+      el      : to.hash,
+      behavior: 'smooth',
+      offset  : { x: 0, y: 100 },
+    };
+  } else {
+    return { 
+      top     : 0, 
+      behavior: 'smooth',
+    };
+  }
+}
+
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes,
-  /* ページ内スクロール */
-  scrollBehavior(to) {
-    if (to.hash) {
-      return { el: to.hash, behavior: 'smooth'};
-    } else {
-      return { top: 0, behavior: 'smooth'};
-    }
-  }
+  scrollBehavior
 })
 
 export default router

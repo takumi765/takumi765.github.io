@@ -45,7 +45,7 @@
         info: [
           {
             category: "名前",
-            content : "岩﨑琢己",
+            content : "岩﨑 琢己",
           },
           {
             category: "所属",
@@ -53,7 +53,7 @@
           },
           {
             category: "趣味",
-            content : "旅行、サッカー、サイクリング",
+            content : "旅行 サッカー サイクリング",
           },
           {
             category: "開発チーム",
