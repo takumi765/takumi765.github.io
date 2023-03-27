@@ -4,8 +4,7 @@
     <div id="skillset-link" class="skillset pa-5"><SkillSet /></div>
     <div id="news-link" class="news pa-5"><News /></div>
     <div id="works-link" class="works pa-5"><Works /></div>
-    <div class="pa-5"><ScrollTop /></div>
-    <router-link to="/home">Go to Home</router-link>
+    <div class="footer pa-5"><Footer /></div>
   </div>
 </template>
 
@@ -14,7 +13,7 @@
   import SkillSet from '@/components/SkillSet.vue'
   import News     from '@/components/News.vue'
   import Works    from '@/components/Works.vue'
-  import ScrollTop from '@/layouts/default/ScrollTop.vue'
+  import Footer from '@/layouts/default/Footer.vue'
   /* css */
   import '../styles/base.css';
 </script>
@@ -31,5 +30,8 @@
   }
   .works{
     background-color: rgb(255, 228, 228);
+  }
+  .footer{
+    background-color: rgb(206, 206, 206);
   }
 </style>

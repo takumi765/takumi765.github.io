@@ -57,7 +57,7 @@
           },
           {
             category: "開発チーム",
-            content : "Nebore（ネボア）",
+            content : "Nebore",
           },
         ],
       }
