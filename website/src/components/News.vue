@@ -10,9 +10,6 @@
           <th class="text-left">
             Title
           </th>
-          <th class="text-left">
-            Type
-          </th>
         </tr>
       </thead>
       <tbody>
@@ -22,13 +19,6 @@
         >
           <td>{{ item.date }}</td>
           <td v-html="item.title"></td>
-          <td>
-            <v-badge
-              color="info"
-              v-bind:content="item.type"
-              inline
-            ></v-badge>
-          </td>
         </tr>
       </tbody>
     </v-table>
@@ -36,7 +26,7 @@
       <v-pagination
         v-model="page"
         v-bind:length="totalPages"
-        :total-visible="parPage"
+        :total-visible="6"
         density=conpact
       ></v-pagination>
     </div>

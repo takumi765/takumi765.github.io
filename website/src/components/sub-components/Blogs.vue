@@ -4,7 +4,7 @@
       <v-pagination
         v-model="page"
         v-bind:length="totalPages"
-        :total-visible="parPage"
+        :total-visible="6"
         density=conpact
       ></v-pagination>
     </div>
