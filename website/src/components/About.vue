@@ -7,7 +7,7 @@
     <div>
       <div class="d-flex flex-wrap mb-6">
         <v-sheet class="ma-1 pa-1">
-          <img class="profImg" src="../assets/profile.jpg">
+          <img class="profImg" src="../assets/img/profile.jpg">
         </v-sheet>
         <v-sheet class="ma-1 pa-1">
           <v-table density="compact">

@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div style="background-color: rgb(255, 247, 234);">
     <div id="about-link" class="about pa-5"><About /></div>
     <div id="skillset-link" class="skillset pa-5"><SkillSet /></div>
     <div id="news-link" class="news pa-5"><News /></div>
@@ -19,7 +19,7 @@
 </script>
 
 <style scoped>
-  .about{
+  /* .about{
     background-color: rgb(255, 247, 234);
   }
   .skillset{
@@ -30,7 +30,7 @@
   }
   .works{
     background-color: rgb(255, 228, 228);
-  }
+  } */
   .footer{
     background-color: rgb(206, 206, 206);
   }
