@@ -1,14 +1,16 @@
 <template>
   <div>
     <!-- 昇順・降順切り替えボタン -->
-    <div v-if="orderType === '降順'" style="color: red;">
+    <div v-if="orderType === '降順'" style="color: red;" class="orderChip">
       <v-chip 
+        density="compact"
         @click="changeOrder" 
         v-bind:text="orderType"
       ></v-chip>
     </div>
-    <div v-if="orderType === '昇順'" style="color: blue;">
+    <div v-if="orderType === '昇順'" style="color: blue;" class="orderChip">
       <v-chip 
+        density="compact"
         @click="changeOrder" 
         v-bind:text="orderType"
       ></v-chip>
@@ -88,5 +90,7 @@
 </script>
 
 <style scoped>
-
+  .orderChip{
+    text-align: center;
+  }
 </style>

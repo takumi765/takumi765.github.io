@@ -23,7 +23,7 @@
             </thead>
             <tbody>
               <tr
-                v-for="item in info"
+                v-for="item in infoList"
                 :key="item.category"
               >
                 <td>{{ item.category }}</td>
@@ -36,41 +36,26 @@
     </div>
     <div>
       <ul class="d-flex flex-wrap mb-6 account">
-        <li><v-chip color=green class="nav-item" href="https://www.sens.sys.es.osaka-u.ac.jp/" target="_blank">SENSLab</v-chip></li>
-        <li><v-chip color=black class="nav-item" href="https://github.com/takumi765" target="_blank">GitHub</v-chip></li>
-        <li><v-chip color=red class="nav-item" href="https://note.com/good_echium475" target="_blank">note</v-chip></li>
-        <li><v-chip color=blue class="nav-item" href="https://challenge-think.hatenablog.com/" target="_blank">hatena</v-chip></li>
-        <li><v-chip color=black class="nav-item" href="" target="_blank">準備中</v-chip></li>
+        <li 
+          v-for="item in accountList_RAW"
+          :key="item.name"
+        >
+          <v-chip 
+            v-bind:color="item.color"
+            v-bind:href="item.accountURL"
+            target="_blank"
+          >
+            {{ item.name }}
+          </v-chip>
+        </li>
       </ul>
     </div>
   </div>
 </template>
 
-<script>
-  export default {
-    data () {
-      return {
-        info: [
-          {
-            category: "名前",
-            content : "岩﨑 琢己",
-          },
-          {
-            category: "所属",
-            content : "大阪大学大学院",
-          },
-          {
-            category: "趣味",
-            content : "旅行 サッカー サイクリング",
-          },
-          {
-            category: "開発チーム",
-            content : "Nebore",
-          },
-        ],
-      }
-    },
-  }
+<script setup>
+  import accountList_RAW from '@/assets/data/AccountData';
+  import infoList from '@/assets/data/ProfileData';
 </script>
 
 <style scoped>

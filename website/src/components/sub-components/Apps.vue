@@ -18,6 +18,7 @@
             <div class="text-overline mb-1">
               <v-chip
                 color="error"
+                density="compact"
                 v-bind:text="item.type"
                 inline
               >
