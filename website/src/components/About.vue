@@ -33,7 +33,15 @@
           </v-table>
         </v-sheet>
       </div>
-      
+    </div>
+    <div>
+      <ul class="d-flex flex-wrap mb-6 account">
+        <li><a class="nav-item" href="https://www.sens.sys.es.osaka-u.ac.jp/" target="_blank">🔗SENSLab</a></li>
+        <li><a class="nav-item" href="https://github.com/takumi765" target="_blank">🔗GitHub</a></li>
+        <li><a class="nav-item" href="https://note.com/good_echium475" target="_blank">🔗note</a></li>
+        <li><a class="nav-item" href="https://challenge-think.hatenablog.com/" target="_blank">🔗hatena</a></li>
+        <li>準備中</li>
+      </ul>
     </div>
   </div>
 </template>
@@ -79,5 +87,12 @@
     margin-top: 15px;
     width: 200px;
     border-radius: 20%;
+  }
+  .account{
+    text-decoration: none;
+    list-style: none;
+  }
+  li{
+    margin: 0% 1%;
   }
 </style>
