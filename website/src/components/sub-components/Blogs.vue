@@ -1,5 +1,9 @@
 <template>
   <div>
+    <!-- 昇順・降順切り替えボタン -->
+    <v-chip @click="changeOrder" v-bind:text="orderType"></v-chip>
+
+    <!-- ページネーション -->
     <div class="text-center">
       <v-pagination
         v-model="page"
@@ -8,15 +12,7 @@
         density=conpact
       ></v-pagination>
     </div>
-    <div class="d-flex align-center flex-column">
-      <v-btn-toggle
-        v-model="toggle"
-        divided
-      >
-        <v-btn @click="accending">昇順</v-btn>
-        <v-btn @click="decending">降順</v-btn>
-      </v-btn-toggle>
-    </div>
+    
     <div class="d-flex flex-wrap flex-row mb-6">
       <BlogIframe
         v-for='blogInfo in pageList[page-1]'
@@ -28,20 +24,17 @@
 </template>
 
 <script setup>
-  import { ref, computed } from 'vue'; 
+  import { ref, computed, reactive } from 'vue'; 
   import BlogIframe from '@/components/sub-components/subsub-components/BlogIframe.vue';
   import blogInfoList_RAW from '@/assets/data/BlogData';
 
   const page = ref(1);
-  /* ブログをソートする */
-  const blogInfoList = blogInfoList_RAW.sort((a,b) => b.date-a.date);
+
   
-  const accending = () => {
-    blogInfoList = blogInfoList_RAW.sort((a,b) => a.date-b.date);
-  }
-  const decending = () => {
-    blogInfoList = blogInfoList_RAW.sort((a,b) => b.date-a.date);
-  }
+
+  /* ブログをソートする */
+  var blogInfoList = reactive(blogInfoList_RAW.sort((a,b) => b.date-a.date));
+  const orderType = ref("降順");
 
   // 1ページあたりの記事数
   const parPage = 8;
@@ -56,7 +49,7 @@
   }
 
   /* ページ毎にブログを格納する */
-  var pageList = [];
+  var pageList = reactive([]);
   var blogCount=0;
   for(let i=0; i<totalPages; i++){
       pageList[i]=[];
@@ -66,4 +59,29 @@
       }
     }
   }
+
+  const changeOrder = () => {
+    if(orderType.value === "昇順"){
+      orderType.value = "降順";
+      blogInfoList = blogInfoList_RAW.sort((a,b) => b.date-a.date);
+    }else{
+      orderType.value = "昇順";
+      blogInfoList = blogInfoList_RAW.sort((a,b) => a.date-b.date);
+    }
+    /* ページ毎にブログを格納する */
+    blogCount=0;
+    for(let i=0; i<totalPages; i++){
+        pageList[i]=[];
+      for(let j=0; j<parPage; j++){
+        if(blogCount<blogInfoList.length){
+          pageList[i][j] = blogInfoList[blogCount++];
+        }
+      }
+    }
+  }
+
 </script>
+
+<style scoped>
+
+</style>

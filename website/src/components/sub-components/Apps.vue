@@ -16,12 +16,12 @@
         <v-card-item>
           <div>
             <div class="text-overline mb-1">
-              <!-- badgeを動的に入れたい -->
-              <v-badge
+              <v-chip
                 color="error"
-                v-bind:content="item.type"
+                v-bind:text="item.type"
                 inline
-              ></v-badge>
+              >
+              </v-chip>
             </div>
             <div class="text-h6 mb-1">
               {{ item.title }}
