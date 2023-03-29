@@ -1,6 +1,7 @@
 <template>
   <div class="body">
     <h1>Skill Set</h1>
+    <Chart />
     <div class="d-flex flex-wrap flex-row mb-6">
       <v-card 
         v-for="skill in skillInfos"
@@ -15,62 +16,17 @@
         </template>
 
         <template v-slot:text>
-          {{ skill.peirod }}
+          使用歴：{{ skill.peirod }}年
         </template>
       </v-card>
     </div>
   </div>
 </template>
 
-<script>
-  export default {
-    data () {
-      return {
-        skillInfos: [
-          {
-            language: "C",
-            peirod : "使用歴：3年",
-          },
-          {
-            language: "CSS",
-            peirod : "使用歴：3年",
-          },
-          {
-            language: "HTML",
-            peirod : "使用歴：3年",
-          },
-          {
-            language: "JavaScript",
-            peirod : "使用歴：2年",
-          },
-          {
-            language: "TypeScript",
-            peirod : "使用歴：2年",
-          },
-          {
-            language: "Python",
-            peirod : "使用歴：1年",
-          },
-          {
-            language: "Visual Basic",
-            peirod : "使用歴：1年",
-          },
-          {
-            language: "C#",
-            peirod : "使用歴：0.5年",
-          },
-          {
-            language: "C++",
-            peirod : "使用歴：0.5年",
-          },
-          {
-            language: "R",
-            peirod : "使用歴：0.5年",
-          },
-        ],
-      }
-    },
-  }
+<script setup>
+  import Chart from '@/components/sub-components/Chart';
+  import skillInfos_RAW from "@/assets/data/SkillsetData";
+  const skillInfos = skillInfos_RAW;
 </script>
 
 <style scoped>

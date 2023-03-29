@@ -10,8 +10,9 @@
 </template>
 
 <script setup>
-  import ScrollTop from '@/layouts/default/ScrollTop.vue'
+  import ScrollTop from '@/layouts/default/ScrollTop.vue';
 </script>
+
 <style scoped>
   .footer{
     background-color: rgb(206, 206, 206);
