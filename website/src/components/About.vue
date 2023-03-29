@@ -36,11 +36,11 @@
     </div>
     <div>
       <ul class="d-flex flex-wrap mb-6 account">
-        <li><a class="nav-item" href="https://www.sens.sys.es.osaka-u.ac.jp/" target="_blank">🔗SENSLab</a></li>
-        <li><a class="nav-item" href="https://github.com/takumi765" target="_blank">🔗GitHub</a></li>
-        <li><a class="nav-item" href="https://note.com/good_echium475" target="_blank">🔗note</a></li>
-        <li><a class="nav-item" href="https://challenge-think.hatenablog.com/" target="_blank">🔗hatena</a></li>
-        <li>準備中</li>
+        <li><v-chip color=green class="nav-item" href="https://www.sens.sys.es.osaka-u.ac.jp/" target="_blank">SENSLab</v-chip></li>
+        <li><v-chip color=black class="nav-item" href="https://github.com/takumi765" target="_blank">GitHub</v-chip></li>
+        <li><v-chip color=red class="nav-item" href="https://note.com/good_echium475" target="_blank">note</v-chip></li>
+        <li><v-chip color=blue class="nav-item" href="https://challenge-think.hatenablog.com/" target="_blank">hatena</v-chip></li>
+        <li><v-chip color=black class="nav-item" href="" target="_blank">準備中</v-chip></li>
       </ul>
     </div>
   </div>
