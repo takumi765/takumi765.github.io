@@ -11,10 +11,10 @@
         color="deep-purple-accent-4"
         align-tabs="center"
       >
-        <v-tab><router-link to="#about-link">About</router-link></v-tab>
-        <v-tab><router-link to="#skillset-link">Skill Set</router-link></v-tab>
-        <v-tab><router-link to="#news-link">News</router-link></v-tab>
-        <v-tab><router-link to="#works-link">Works</router-link></v-tab>
+        <router-link to="#about-link"><v-tab>About</v-tab></router-link>
+        <router-link to="#skillset-link"><v-tab>Skill Set</v-tab></router-link>
+        <router-link to="#news-link"><v-tab>News</v-tab></router-link>
+        <router-link to="#works-link"><v-tab>Works</v-tab></router-link>
       </v-tabs>
     </v-app-bar>
   </div>
