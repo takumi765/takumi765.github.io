@@ -1,7 +1,18 @@
 <template>
   <div>
     <!-- 昇順・降順切り替えボタン -->
-    <v-chip @click="changeOrder" v-bind:text="orderType"></v-chip>
+    <div v-if="orderType === '降順'" style="color: red;">
+      <v-chip 
+        @click="changeOrder" 
+        v-bind:text="orderType"
+      ></v-chip>
+    </div>
+    <div v-if="orderType === '昇順'" style="color: blue;">
+      <v-chip 
+        @click="changeOrder" 
+        v-bind:text="orderType"
+      ></v-chip>
+    </div>
 
     <!-- ページネーション -->
     <div class="text-center">
@@ -30,8 +41,6 @@
 
   const page = ref(1);
 
-  
-
   /* ブログをソートする */
   var blogInfoList = reactive(blogInfoList_RAW.sort((a,b) => b.date-a.date));
   const orderType = ref("降順");
@@ -48,17 +57,22 @@
     totalPages = Math.floor(syou)+1;
   }
 
-  /* ページ毎にブログを格納する */
   var pageList = reactive([]);
-  var blogCount=0;
-  for(let i=0; i<totalPages; i++){
-      pageList[i]=[];
-    for(let j=0; j<parPage; j++){
-      if(blogCount<blogInfoList.length){
-        pageList[i][j] = blogInfoList[blogCount++];
+  var blogCount;
+  const createPageList = (blogInfoList) => {
+    pageList = []
+    blogCount = 0;
+    for(let i=0; i<totalPages; i++){
+        pageList[i]=[];
+      for(let j=0; j<parPage; j++){
+        if(blogCount<blogInfoList.length){
+          pageList[i][j] = blogInfoList[blogCount++];
+        }
       }
     }
   }
+  /* ページ毎にブログを格納する */
+  createPageList(blogInfoList);
 
   const changeOrder = () => {
     if(orderType.value === "昇順"){
@@ -69,17 +83,8 @@
       blogInfoList = blogInfoList_RAW.sort((a,b) => a.date-b.date);
     }
     /* ページ毎にブログを格納する */
-    blogCount=0;
-    for(let i=0; i<totalPages; i++){
-        pageList[i]=[];
-      for(let j=0; j<parPage; j++){
-        if(blogCount<blogInfoList.length){
-          pageList[i][j] = blogInfoList[blogCount++];
-        }
-      }
-    }
+    createPageList(blogInfoList);
   }
-
 </script>
 
 <style scoped>
