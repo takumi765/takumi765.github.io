@@ -93,6 +93,6 @@
     list-style: none;
   }
   li{
-    margin: 0% 1%;
+    margin: 0.5% 1%;
   }
 </style>
