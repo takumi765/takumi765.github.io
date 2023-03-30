@@ -63,7 +63,7 @@
     language: {
       labels: ['C','CSS','HTML','JavaScript', 'TypeScript', 'Python', 'Visual Basic', 'C#', 'C++', 'R'],
       datasets: [{
-        label: 'JavaScript',
+        label: 'Language',
         data: [8, 8, 8, 6, 6, 3, 3, 3, 1, 1, 0.5],
         fill: true,
         backgroundColor: 'rgba(255, 99, 132, 0.2)',
