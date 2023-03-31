@@ -9,7 +9,8 @@
 修正
 1. <code>git pull</code>
 2. <code>yarn install</code>
-3. <code>website</code>ディレクトリ直下で<code>yarn dev</code>
+3. <code>yarn add vue-chartjs chart.js</code>
+4. <code>website</code>ディレクトリ直下で<code>yarn dev</code>
 
 投稿
 1. <code>yarn dev</code>
