@@ -1,8 +1,13 @@
 const NewsInfoList_RAW = [
   {
-    type : "research", 
+    type : "hoby", 
     date : "2023.03.24",
     title: `<a href="https://takumi765.github.io/" target=_blank>Webサイト</a>をリニューアルしました`,
+  },
+  {
+    type : "hoby", 
+    date : "2023.03.24",
+    title: `開発チームNeboreを結成しました`,
   },
   {
     type : "blog",

@@ -1,7 +1,7 @@
 <template>
   <div class="body">
     <h1>Skill Set</h1>
-    <Chart />
+    <!-- <Chart /> -->
     <div class="d-flex flex-wrap flex-row mb-6">
       <v-card 
         v-for="skill in skillInfos"

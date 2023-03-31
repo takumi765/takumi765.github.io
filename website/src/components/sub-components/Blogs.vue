@@ -44,7 +44,7 @@
   const page = ref(1);
 
   /* ブログをソートする */
-  var blogInfoList = reactive(blogInfoList_RAW.sort((a,b) => b.date-a.date));
+  var blogInfoList = blogInfoList_RAW.sort((a,b) => b.date-a.date);
   const orderType = ref("降順");
 
   // 1ページあたりの記事数
@@ -61,11 +61,12 @@
 
   var pageList = reactive([]);
   var blogCount;
+  /* ページごとにブログを分割する */
   const createPageList = (blogInfoList) => {
-    pageList = []
+    pageList.splice(0);// 配列を空にする
     blogCount = 0;
     for(let i=0; i<totalPages; i++){
-        pageList[i]=[];
+      pageList[i]=[];
       for(let j=0; j<parPage; j++){
         if(blogCount<blogInfoList.length){
           pageList[i][j] = blogInfoList[blogCount++];

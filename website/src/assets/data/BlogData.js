@@ -13,7 +13,6 @@ const blogInfoList_RAW = [
   {
     date : 20230324,
     type : "hatena",
-    title: "",
     url  : "https://challenge-think.hatenablog.com/entry/2023/03/24/223702",
   },
   {
