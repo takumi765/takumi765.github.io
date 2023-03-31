@@ -1,6 +1,11 @@
 /* ブログの情報 */
 const blogInfoList_RAW = [
   {
+    date : 20230331,
+    type : "hatena",
+    url  : "https://challenge-think.hatenablog.com/entry/2023/03/31/094835",
+  },
+  {
     date : 20230327,
     type : "hatena",
     url  : "https://challenge-think.hatenablog.com/entry/2023/03/27/154056",
