@@ -95,6 +95,7 @@
   /* ページ毎にブログを格納する */
   createPageList(NewsInfoList);
 
+  /* 昇順・降順変更 */
   const changeOrder = () => {
     if(orderType.value === "↑"){
       orderType.value = "↓";
