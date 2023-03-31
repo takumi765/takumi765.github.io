@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <h1>News</h1>
+    <h1 style="padding-top: 7%;">News</h1>
     <v-table density="conpact">
       <thead>
         <tr>

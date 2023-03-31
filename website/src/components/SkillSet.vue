@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <h1>Skill Set</h1>
+    <h1 style="padding-top: 7%;">Skill Set</h1>
     <!-- <Chart /> -->
     <div class="d-flex flex-wrap flex-row mb-6">
       <v-card 

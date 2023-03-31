@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <h1>About</h1>
+    <h1 style="padding-top: 7%;">About</h1>
     エンジニアを目指す関西出身の学生です。<br>
     大学ではVR関連の研究をしています。<br>
     
