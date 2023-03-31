@@ -1,10 +1,10 @@
 <template>
   <div>
-    <v-btn 
+    <router-link to=""><v-btn 
       rounded
       size=small
       v-show="buttonActive"
-    ><router-link to="">Topへ</router-link></v-btn>
+    >Topへ</v-btn></router-link>
   </div>
 </template>
 

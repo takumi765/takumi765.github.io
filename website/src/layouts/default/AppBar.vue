@@ -4,7 +4,7 @@
       <v-app-bar-title>
         <!-- <v-img src="../../assets/icon.jpg" style="width: 24px"/> -->
         <v-icon icon="mdi-circle-slice-4" />
-        Iwasaki Takumi
+        <router-link to="">Iwasaki Takumi</router-link>
       </v-app-bar-title>
       <v-tabs
         v-model="tab"
