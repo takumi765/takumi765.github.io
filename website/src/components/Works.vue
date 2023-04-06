@@ -1,6 +1,6 @@
 <template>
   <div class="body">
-    <h1 style="padding-top: 7%;">Works</h1>
+    <h1>Works</h1>
 
     <v-card>
       <v-tabs

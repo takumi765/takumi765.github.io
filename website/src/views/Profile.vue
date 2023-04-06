@@ -1,10 +1,10 @@
 <template>
   <div style="background-color: rgb(255, 247, 234);">
-    <div id="about-link" class="about pa-5"><About /></div>
-    <div id="skillset-link" class="skillset pa-5"><SkillSet /></div>
-    <div id="news-link" class="news pa-5"><News /></div>
-    <div id="works-link" class="works pa-5"><Works /></div>
-    <div class="footer pa-5"><Footer /></div>
+    <div id="about-link" class="about"><About /></div>
+    <div id="skillset-link" class="skillset"><SkillSet /></div>
+    <div id="news-link" class="news"><News /></div>
+    <div id="works-link" class="works"><Works /></div>
+    <div class="footer"><Footer /></div>
   </div>
 </template>
 
@@ -19,19 +19,24 @@
 </script>
 
 <style scoped>
-  /* .about{
-    background-color: rgb(255, 247, 234);
+  .about{
+    /* background-color: rgb(255, 247, 234); */
+    padding-top: 55px;
   }
   .skillset{
-    background-color: rgb(227, 255, 231);
+    /* background-color: rgb(227, 255, 231); */
+    padding-top: 55px;
   }
   .news{
-    background-color: rgb(219, 219, 219);
+    /* background-color: rgb(219, 219, 219); */
+    padding-top: 55px;
   }
   .works{
-    background-color: rgb(255, 228, 228);
-  } */
+    /* background-color: rgb(255, 228, 228); */
+    padding-top: 55px;
+  }
   .footer{
     background-color: rgb(206, 206, 206);
+    margin-top: 20px;
   }
 </style>
