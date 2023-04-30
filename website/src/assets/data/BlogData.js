@@ -3,7 +3,7 @@ const blogInfoList_RAW = [
   {
     date : 20230430,
     type : "note",
-    url  : "https://note.com/good_echium475/n/na9d03958320b",
+    url  : "https://note.com/embed/notes/na9d03958320b" ,
   },
   {
     date : 20230417,
