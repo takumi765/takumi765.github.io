@@ -6,6 +6,11 @@ const blogInfoList_RAW = [
     url  : "https://challenge-think.hatenablog.com/entry/2023/08/08/114215",
   },
   {
+    date : 20230430,
+    type : "note",
+    url  : "https://note.com/embed/notes/na9d03958320b" ,
+  },
+  {
     date : 20230417,
     type : "hatena",
     url  : "https://challenge-think.hatenablog.com/entry/2023/04/17/194658",
