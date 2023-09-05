@@ -39,6 +39,14 @@ const skillInfos_RAW = [
     language: "R",
     peirod : 0.5,
   },
+  {
+    language: "PHP",
+    peirod : 0.1,
+  },
+  {
+    language: "Docker",
+    peirod : 0.1,
+  },
 ]
 
 export default skillInfos_RAW;
