@@ -1,6 +1,26 @@
 /* ブログの情報 */
 const blogInfoList_RAW = [
   {
+    date : 20230922,
+    type : "hatena",
+    url  : "https://challenge-think.hatenablog.com/entry/2023/09/22/201606",
+  },
+  {
+    date : 20230922,
+    type : "hatena",
+    url  : "https://challenge-think.hatenablog.com/entry/2023/09/22/193900",
+  },
+  {
+    date : 20230922,
+    type : "hatena",
+    url  : "https://challenge-think.hatenablog.com/entry/2023/09/22/192908",
+  },
+  {
+    date : 20230922,
+    type : "hatena",
+    url  : "https://challenge-think.hatenablog.com/entry/2023/09/22/185534",
+  },
+  {
     date : 20230905,
     type : "hatena",
     url  : "https://challenge-think.hatenablog.com/entry/2023/09/05/124528",
