@@ -16,7 +16,8 @@
         </template>
 
         <template v-slot:text>
-          使用歴：{{ skill.peirod.year }}年{{ skill.peirod.month }}ケ月
+          <div v-if="checkPlus(skill.peirod.month)">使用歴：{{ skill.peirod.year }}年{{ skill.peirod.month }}ケ月</div>
+          <div v-if="!checkPlus(skill.peirod.month)">使用歴：{{ skill.peirod.year-1 }}年{{ 12+skill.peirod.month }}ケ月</div>
         </template>
       </v-card>
     </div>
@@ -27,6 +28,11 @@
   import Chart from '@/components/sub-components/Chart';
   import skillInfos_RAW from "@/assets/data/SkillsetData";
   const skillInfos = skillInfos_RAW;
+
+  const checkPlus = (num) => {
+    if(num < 0) return false;
+    else return true;
+  }
 </script>
 
 <style scoped>
