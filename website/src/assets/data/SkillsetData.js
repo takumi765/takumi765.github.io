@@ -1,51 +1,89 @@
+const today = new Date();
+console.log(typeof(today.getFullYear()));
 const skillInfos_RAW = [
   {
     language: "C",
-    peirod : 3,
+    peirod : {
+      year : today.getFullYear()-2018,
+      month: today.getMonth()-4,
+    }
   },
   {
     language: "CSS",
-    peirod : 3,
+    peirod : {
+      year : today.getFullYear()-2019,
+      month: today.getMonth()-3,
+    }
   },
   {
     language: "HTML",
-    peirod : 3,
+    peirod : {
+      year : today.getFullYear()-2020,
+      month: today.getMonth()-3,
+    }
   },
   {
     language: "JavaScript",
-    peirod : 2,
+    peirod : {
+      year : today.getFullYear()-2021,
+      month: today.getMonth()-10,
+    }
   },
   {
     language: "TypeScript",
-    peirod : 2,
+    peirod : {
+      year : today.getFullYear()-2021,
+      month: today.getMonth()-10,
+    }
   },
   {
     language: "Python",
-    peirod : 1,
+    peirod : {
+      year : today.getFullYear()-2021,
+      month: today.getMonth()-2,
+    }
   },
   {
     language: "Visual Basic",
-    peirod : 1,
+    peirod : {
+      year : today.getFullYear()-2020,
+      month: today.getMonth()-2,
+    }
   },
   {
     language: "C#",
-    peirod : 0.5,
+    peirod : {
+      year : today.getFullYear()-2021,
+      month: today.getMonth()-10,
+    }
   },
   {
     language: "C++",
-    peirod : 0.5,
+    peirod : {
+      year : today.getFullYear()-2021,
+      month: today.getMonth()-4,
+    }
   },
   {
     language: "R",
-    peirod : 0.5,
+    peirod : {
+      year : today.getFullYear()-2023,
+      month: today.getMonth()-4,
+    }
   },
   {
     language: "PHP",
-    peirod : 0.1,
+    peirod : {
+      year : today.getFullYear()-2023,
+      month: today.getMonth()-4,
+    }
   },
   {
     language: "Docker",
-    peirod : 0.1,
+    peirod : {
+      year : today.getFullYear()-2023,
+      month: today.getMonth()-4,
+    }
   },
 ]
 

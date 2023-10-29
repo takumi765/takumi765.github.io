@@ -16,7 +16,7 @@
         </template>
 
         <template v-slot:text>
-          使用歴：{{ skill.peirod }}年
+          使用歴：{{ skill.peirod.year }}年{{ skill.peirod.month }}ケ月
         </template>
       </v-card>
     </div>
