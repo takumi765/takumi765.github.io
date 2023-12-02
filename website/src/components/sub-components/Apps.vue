@@ -35,6 +35,7 @@
           <div class="urls">
             <div v-if="item.appUrl">アプリは<a v-html="item.appUrl"></a></div>
             <div v-if="item.blogUrl">関連ブログは<a v-html="item.blogUrl"></a></div>
+            <div v-if="item.repoUrl">リポジトリは<a v-html="item.repoUrl"></a></div>
           </div>
         </v-card-item>
       </v-card>
