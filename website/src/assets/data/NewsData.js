@@ -1,5 +1,10 @@
 const NewsInfoList_RAW = [
   {
+    type : "research", 
+    date : "2024.03.06",
+    title: `<a href="https://www.interaction-ipsj.org/2024/" arget=_blank>インタラクション2024</a>にてインタラクティブ発表しました`,
+  },
+  {
     type : "hoby", 
     date : "2023.03.24",
     title: `<a href="https://takumi765.github.io/" target=_blank>Webサイト</a>をリニューアルしました`,
